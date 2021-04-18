@@ -1,0 +1,51 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: white;
+  }
+  
+  h1 {
+    font-size: 40px;
+    padding: 10px;
+  }
+ 
+  
+  .card {
+    margin: 5px;
+    width: 20%;
+  }
+  
+
+  .card-body{
+    background-color: #dbc0c0;
+    color: black;
+  }
+  
+  .card-header {
+    background: rgb(233, 38, 129);
+    color:rgb(96, 62, 190);
+    text-align: center;
+  }
+  
+  
+  .container {
+    display: inline;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .jumbotron {
+    background-color: #32b5f1;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }

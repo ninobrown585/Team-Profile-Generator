@@ -1,5 +1,5 @@
-const Manager = require("../job-titles/Manager");
-const Employee = require("../job-titles/Employee");
+const Manager = require("../job-titles/manager");
+const Employee = require("../job-titles/employee");
 test("Can set office number via constructor argument", () => {
   const testValue = 100;
   const newManager = new Manager("Foo", 1, "test@test.com", testValue);

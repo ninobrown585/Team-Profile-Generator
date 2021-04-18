@@ -1,17 +1,19 @@
 const Intern = require("../job-titles/intern");
-const Employee = require("../job-titles/Employee");
-test("Can set office number via constructor argument", () => {
-    const testValue = 100;
-    const newIntern = new Intern("Foo", 1, "test@test.com", testValue);
-    expect(newIntern.officeNumber).toBe(testValue);
+const Employee = require("../job-titles/employee");
+test("Can set school argument", () => {
+    const testValue = "SMU";
+    const newIntern = new Intern("Lou", 5, "Louie21@nba.com", testValue);
+    expect(newIntern.school).toBe(testValue);
 });
-test("getRole() should return \"intern\"", () => {
-    const testValue = "intern";
-    const newIntern = new Intern("Foo", 1, "test@test.com", 100);
+
+test(" should return 'Intern'", () => {
+    const testValue = "Intern";
+    const newIntern = new Intern("Lou", 5, "Louie21@nba.com", "SMU");
     expect(newIntern.getRole()).toBe(testValue);
 });
-    test("Can get office number via getOffice()", () => {
-    const testValue = 100;
-    const newIntern = new Intern("Foo", 1, "test@test.com", testValue);
-    expect(newIntern.getOfficeNumber()).toBe(testValue);
-}); 
+
+test(" trying to return the school", () => {
+    const testValue = "SMU";
+    const newIntern = new Intern("Lou", 5, "Louie21@nba.com", testValue);
+    expect(newIntern.getSchool()).toBe(testValue);
+});

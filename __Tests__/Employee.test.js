@@ -1,4 +1,4 @@
-const Employee = require("../job-titles/Employee");
+const Employee = require("../job-titles/employee");
 test("Can instantiate Employee instance", () => {
   const newEmployee = new Employee();
   expect(typeof(newEmployee)).toBe("object");
